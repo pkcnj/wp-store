@@ -1,0 +1,2 @@
+2021-10-29T00:40:05+00:00 DEBUG Sender payload: {"click_action":"no","url":"https:\/\/localhost\/store-demo","localhost":"yes"}
+2021-10-29T00:40:08+00:00 DEBUG Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null}

@@ -1,0 +1,67 @@
+.wc-stripe-klarna-loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  transform: scale(.65);
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    animation: klarna-payments-loader 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #000 transparent transparent transparent;
+
+    &:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+  }
+}
+
+@keyframes klarna-payments-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wc-stripe-blocks-klarna-container {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wc-stripe-blocks-radio-accordion {
+    .wc-stripe-blocks-radio-accordion__content {
+      display: none;
+
+      &.wc-stripe-blocks-radio-accordion__content-visible {
+        display: block;
+      }
+    }
+  }
+}
+
+.wc-stripe-klarna__testmode {
+  label {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,274 @@
+/* Console Page */
+
+.wpm2aws-confimation-overlay {
+    display:none;
+    background-color:rgba(0,0,0,0.5);
+    height:100%;
+    width:100%;
+    z-index:999;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.wpm2aws-confimation-overlay .wpm2aws-confimation-form-container {
+    top: 25%;
+    position: relative;
+    /* width: 100%; */
+    width: 30%;
+    text-align: center;
+    margin: 0 35%;
+    background-color: #f2f2f2;
+    padding: 10px 10px 30px 10px;
+    border-radius: 10px;
+}
+.wpm2aws-confimation-form-container form {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.wpm2aws-console-section {
+    display: block;
+    width: auto;
+    background-color:#fff;
+    border-radius:4px;
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    border: 1px solid #d2d2d2;
+}
+
+.wpm2aws-console-section-inverse {
+    background-color:#f1f1f1; /* WP Grey */
+}
+
+.wpm2aws-console-section-inner-panel {
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 98%;
+    text-align: center;
+}
+
+.wpm2aws-console-section-inner-sub-panel {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+}
+
+.wpm2aws-console-section-inner-sub-panel,
+.wpm2aws-console-section-inner-sub-panel img
+{
+    height: inherit;
+}
+
+.wpm2aws-console-sub-heading-section h3 {
+    margin-top:0px;
+}
+
+.wpm2aws-console-actions-section {
+    margin: 5px 0px 20px 0px;
+}
+
+.wpm2aws-console-section.wpm2aws-console-region {
+    width:100px;
+}
+
+.wpm2aws-console-section.wpm2aws-console-region,
+.wpm2aws-console-actions-section .wpm2aws-console-action-section-button-container,
+.wpm2aws-console-bundles-section,
+.wpm2aws-console-section.wpm2aws-console-bundle {
+    display:inline-block;
+}
+
+.wpm2aws-console-actions-section .wpm2aws-console-action-section-button-container {
+    vertical-align: top;
+    margin: 0 5px;
+}
+
+.wpm2aws-console-bundles-section {
+    float:right;
+}
+
+.button.wpm2aws-confirmation-cancel-button,
+.wpm2aws-console-section.wpm2aws-console-bundle {
+    margin-right:5px;
+    border-radius:4px;
+    /* padding: 5px 10px; */
+}
+
+.button.wpm2aws-button-aws,
+.wpm2aws-console-bundle.wpm2aws-active-bundle {
+    background: linear-gradient(rgb(255, 153, 0) 0%, rgb(221, 107, 16) 100%);
+    border-color: rgb(221, 107, 16);
+}
+
+.button.wpm2aws-button-aws {
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size:1.3em;
+    font-weight:500;
+    color:#000;
+}
+
+.wpm2aws-console-actions-section .button.wpm2aws-button-aws
+{
+    padding: 0px 10px;
+}
+
+.button.wpm2aws-button-aws:hover,
+.button.wpm2aws-button-aws:hover h2 {
+    border-color: rgb(221, 107, 16);
+    color: rgb(221, 107, 16);
+}
+
+.wpm2aws-console-actions-section .button.wpm2aws-button-aws h2,
+.button.wpm2aws-confirmation-cancel-button h2 {
+    margin-top:0px;
+    margin-bottom:0px;
+    color:inherit;
+}
+
+
+.wpm2aws-console-section.wpm2aws-console-bundle h2,
+.wpm2aws-console-section.wpm2aws-console-bundle h4 {
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align: center;
+}
+.wpm2aws-console-section.wpm2aws-console-bundle h4 {
+    font-weight:300;
+    font-style:italic;
+}
+
+.wpm2aws-console-section.wpm2aws-console-region .wpm2aws-console-region-flag {
+    width:25px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.wpm2aws-console-section.wpm2aws-console-region .wpm2aws-console-region-names {
+    width:75px;
+    display:inline-block;
+}
+
+.wpm2aws-console-section.wpm2aws-console-region .wpm2aws-console-region-names h2,
+.wpm2aws-console-section.wpm2aws-console-region .wpm2aws-console-region-names h4 {
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+.wpm2aws-active-alarm-container {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.wpm2aws-console-alarm-notice {
+    border: 1px solid #FF9900;
+    background: #FCF7F0;
+    border-radius:4px;
+    padding:5px;
+}
+
+ul.wpm2aws-console-list {
+    list-style:none;
+    border:none;
+    font-size:1.1rem;
+}
+
+ul.wpm2aws-console-list li {
+    padding: 8px 50px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+ul.wpm2aws-console-list li span.wpm2aws-console-history-event-name {
+    display:inline-block;
+    font-weight:600;
+}
+ul.wpm2aws-console-list li span.wpm2aws-console-history-event-time {
+    display:inline-block;
+    float:right;
+}
+
+.wpm2aws-half-width-panel {
+    width:48%;
+    float:left;
+}
+
+.wpm2aws-half-width-panel-left {
+    margin-right:1%;
+}
+
+.wpm2aws-half-width-panel-right {
+    margin-left:1%;
+}
+
+.wpm2aws-4-by-4-panel {
+    display: inline-block;
+    width:100%;
+    margin-bottom:5px;
+}
+.wpm2aws-4-by-4-sub-panel {
+    width:50%;
+    float:left;
+}
+
+.wpm2aws-sub-panel {
+    width:49%;
+    display:inline-block;
+}
+.wpm2aws-sub-panel.wpm2aws-sub-panel-right {
+    margin-left:1%;
+}
+.wpm2aws-sub-panel.wpm2aws-sub-panel-left {
+    margin-right:1%;
+}
+.wpm2aws-sub-panel {
+    width:49%;
+    display:inline-block;
+}
+
+.wpm2aws-4-by-4-panel .wpm2aws-console-section {
+    margin-bottom:10px;
+}
+
+.wpm2aws-4-by-4-sub-panel.wpm2aws-4-by-4-sub-panel-right .wpm2aws-console-section {
+    margin-left:1%;
+}
+
+.wpm2aws-4-by-4-sub-panel.wpm2aws-4-by-4-sub-panel-left .wpm2aws-console-section {
+    margin-right:1%;
+}
+
+.wpm2aws-console-inputs-container {
+    margin:20px auto;
+    width:100%;
+}
+.wpm2aws-console-inputs-container input[type="text"] {
+    width:100%;
+}
+.wpm2aws-console-inputs-container select {
+    width:100%;
+    margin:10px 0;
+}
+
+.wpm2aws-console-inputs-container option:disabled {
+    background-color:rgba(221, 107, 16,0.5);
+}
+
+.wpm2aws-text-error {
+    color:#a00;
+}
+
+.wpm2aws-console-manual-snapshot-item {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom:0.5em;
+}
+
+.wpm2aws-console-manual-snapshot-item p {
+    margin:0.5em 0;
+}
