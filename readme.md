@@ -6,7 +6,6 @@
 ## Overview:
 A responsive template for an eCommerce store site.
 
-Hosted at:
 
 
 
